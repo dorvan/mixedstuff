@@ -1,0 +1,10 @@
+:pts/5: [root@anthilla] /etc/polkit-1/rules.d #> cat 40-framework.rules 
+polkit.addRule (function(action, subject) {
+	if (subject.isInGroup("framework")) {
+		return polkit.Result.YES;
+	}
+})
+
+
+
+svc01:x:999:1000:fpm-php user:/framework/gigasys/home/svc01/:/bin/bash

@@ -1,0 +1,2 @@
+FORMAT='<category>/<name>\t\t\t\t\t<installedversions:USEFORMAT>\n' USEFORMAT='{first}<use>{!last}\t{}' eix -I > /etc/portage/package.use/use2
+
